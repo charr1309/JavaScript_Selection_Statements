@@ -1,7 +1,26 @@
-console.log("Hello World!\n==========\n");
-console.log("Follow the steps in the README.md file to complete the exercises:\n==========\n");
 
-// Exercise 1
+let playAgain = true;
+function playGame(){
+let rand = 10;
+do{
+let userInput = window.prompt('Enter a number between 1 and 10');
+    if (userInput < rand){
+        alert(`${userInput} is to low try again`);
+    }else if(userInput > rand){
+        alert(`${userInput} is to high try again`);
+    }else
+        alert('Congratulations');
+        let again = confirm('Play again?');
+            if (again == true){
+                playAgain = true;
+            }else {
+                playAgain =  false;
+            }
+            
+    }while(playAgain);
+} 
 
 
-// Exercise 2
+
+
+playGame();
