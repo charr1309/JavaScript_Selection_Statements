@@ -2,7 +2,10 @@ let playAgain = true;
 
 const userInput = document.querySelector("input");
 const submit = document.querySelector("button");
-const element = document.getElementById("new");
+const element = document.getElementById("guesses");
+const solved = document.getElementById("solved")
+
+
 let rand = 10;
 let counter = 0;
   // let rand = Math.floor(Math.random() * 100) + 1;
@@ -29,7 +32,8 @@ function playGame() {
         element.textContent = `count number: ${counter} Your answer is to high.`
     //   alert(`${userInput} is to high try again`);
     } else {
-        element.textContent = `count number: ${counter} Congratulations.`
+        element.textContent = `count number: ${counter}`
+        solved.textContent = " Congratulations!!!"
       playAgain = false;
     }
     userInput.value = "";

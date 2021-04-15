@@ -13,10 +13,16 @@ main {
     /* position: absolute; */
     /* margin-top: auto; */
 }
-#submit {
+#btnContainer {
     width: 100%;
     height: 45px;
+    display: inline-block;
     /* border-radius:40%; */
+}
+.button1, .button2 {
+    width: 30%;
+    height: 45px;
+    display: inline-;
 }
 #number {
     font-size: 30px;
@@ -28,9 +34,14 @@ main {
     width: 100%;
     height: 105px;
     margin-top: 20px;
+    font-size: 30px;
 }
 #timer {
     width: 100%;
     height: 45px;
     background-color: black; 
+    
+}
+#solved {
+    font-size: 75px;
 }
